@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+:root{
+    /* ### Primary */
+
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+
+/* ### Neutral */
+
+--Transparent-white : hsla(0, 0%, 100%, 0.75);    /*  (paragraphs)*/
+--Very-light-gray : hsl(0, 0%, 95%);           /*(background, headings, buttons)*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lexend Deca', sans-serif;
+}
+h1{
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 30px;
+}
+p{
+    font-size: 15px;
+}
+button{
+    font-family: 'Lexend Deca', sans-serif;
+}
+.container{
+    padding: 20px;
+}
+.card{
+    padding: 30px;
+}
+.bright-orange{
+    background-color: var(--Bright-orange);
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+.dark-cyan{
+    background-color: var(--Dark-cyan);
+    color: white;
+}
+.very-dark-cyan{
+    background-color: var(--Very-dark-cyan);
+    color: white;
+    border-radius: 0 0 10px 10px;
+}
+.card img{
+    margin-bottom: 25px;
+}
+.card h1{
+    margin-bottom: 20px;
+}
+.card p{
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+.btn{
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.bright-orange .btn{
+    color: var(--Bright-orange);
+}
+.dark-cyan .btn{
+    color: var(--Dark-cyan);
+}
+.very-dark-cyan .btn{
+    color: var(--Very-dark-cyan);
+}
+.btn:hover{
+    background-color: transparent;
+    color: white;
+}
+
+@media (min-width: 992px) {
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        max-width: 900px;
+        margin: auto;
+    }
+    .card{
+        padding: 45px;
+    }
+    .bright-orange{
+        border-radius: 10px 0 0 10px;
+    }
+    .very-dark-cyan{
+        border-radius: 0 10px 10px 0;
+    }
+    .card p{
+        margin-bottom: 80px;
+    }
+}
